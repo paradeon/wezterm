@@ -99,6 +99,10 @@ config.color_scheme = "AfterGlow"
 config.use_dead_keys = false
 
 -- config.default_prog = {'/bin/zsh', '-l'}
+if is_windows() then
+	config.default_prog = { "powershell.exe", "-NoLogo" }
+end
+
 config.window_decorations = "RESIZE"
 config.inactive_pane_hsb = {
 	saturation = 0.8,
