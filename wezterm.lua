@@ -78,6 +78,19 @@ config.keys = {
 		mods = "LEADER",
 		action = act.TogglePaneZoomState,
 	},
+	{
+		key = "9",
+		mods = "LEADER",
+		action = act.PaneSelect,
+	},
+	-- show the pane selection mode, but have it swap the active and selected panes
+	{
+		key = "0",
+		mods = "LEADER",
+		action = act.PaneSelect({
+			mode = "SwapWithActive",
+		}),
+	},
 }
 
 -- For example, changing the initial geometry for new windows:
